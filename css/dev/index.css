@@ -121,26 +121,36 @@ h6 {
 ::selection {
   background-color: rgba(255, 0, 0, 0.3);
 }
+/*
 html {
-  --units: 1.5vmax;
-  --brick1: #111111;
-  --brick2: #111111;
-  --lines: #000000;
-  --gp-ln: 50% / calc(var(--units) * 10) calc(var(--units) * 5);
-  --gp-cn: 50% / calc(var(--units) * 5) calc(var(--units) * 5);
-  background: repeating-conic-gradient(from 90deg at 95% 55%, var(--lines) 0% 25%, rgba(255, 255, 255, 0) 0% 100%) var(--gp-cn), repeating-linear-gradient(180deg, var(--lines) 0 5%, rgba(255, 255, 255, 0) 0 50%, var(--lines) 0 55%, var(--brick2) 0 100%) var(--gp-ln), repeating-linear-gradient(90deg, var(--brick1) 0 47.5%, var(--lines) 0 50%, var(--brick1) 0 97.5%, var(--lines) 0 100%) var(--gp-ln);
+	--units: 1.5vmax;
+	--brick1: #111111;
+	--brick2: #111111;
+	--lines: #000000;
+	--gp-ln: 50% / calc(var(--units) * 10) calc(var(--units) * 5);
+	--gp-cn: 50% / calc(var(--units) * 5) calc(var(--units) * 5);
+	background:
+		repeating-conic-gradient(from 90deg at 95% 55%, var(--lines) 0% 25%, #fff0 0% 100%) var(--gp-cn),
+		repeating-linear-gradient(180deg, var(--lines) 0 5%, #fff0 0 50%, var(--lines) 0 55%, var(--brick2) 0 100%)
+			var(--gp-ln),
+		repeating-linear-gradient(
+				90deg,
+				var(--brick1) 0 47.5%,
+				var(--lines) 0 50%,
+				var(--brick1) 0 97.5%,
+				var(--lines) 0 100%
+			)
+			var(--gp-ln);
 }
+*/
 body {
   min-width: 20rem;
   color: #fff;
   font-family: "Inter", sans-serif;
   font-size: 1.125rem;
-  /*
-  background-image:
-  	linear-gradient(to right, rgba(255, 255, 255, 0.05) 0.0625rem, transparent 0.0625rem),
-  	linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 0.0625rem, transparent 0.0625rem);
+  background-color: #101110;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 0.0625rem, transparent 0.0625rem), linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 0.0625rem, transparent 0.0625rem);
   background-size: 4.375rem 4.375rem;
-  */
 }
 [data-fls-scrolllock] body {
   overflow: hidden;
